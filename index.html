@@ -92,9 +92,7 @@
 
       <div class="row">
 
-         <div class="three columns">
-
-            <img  src="images/profilepic.jpg" alt="" width="250" height="250" class="profile-pic" />
+         <div class="three columns"> <img src="images/profilepic.jpg" alt=""/>
 
          </div>
 
@@ -227,6 +225,76 @@
    </section> <!-- CV Section End-->
 
 
+   <section id="portfolio">
+
+            <h1>Photography</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  
+					  
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+
+<script>
+
+
+$(function(){       
+
+    var id='191421000@N03';
+    var limit ='12';
+
+    // Flickr Photostream feed link.
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=" + id + "&lang=en-us&format=json&jsoncallback=?", 
+
+    function(data){$.each(data.items, 
+
+    function(i,item){
+
+        // Number of thumbnails to show.            
+        if(i < limit){
+
+        // Create images and append to div id flickr and wrap link around the image.
+        $("<img/>").attr("src", item.media.m.replace('_m', '_s')).appendTo("#flickr").wrap("<a href='" + item.media.m.replace('_m', '_z') + "' name='"+ item.link + "' title='" +  item.title +"'></a>");
+
+
+        }
+
+    }); 
+
+    }); 
+
+    });
+
+</script>
+<style type="text/css">
+#flickr{
+    width:340px;
+    overflow:hidden;
+    }
+#flickr a{
+    width:75px;
+    float:left;
+    margin:10px 10px 0 0;
+    padding:0;
+    border:0;   
+    }
+</style>
+
+
+
+<body> 
+<div id="flickr"></div>
+</body> 	
+	                 </div>
+                        
+
+                
+          		</div>  <!-- item end -->
+
+
+	
    <!-- Portfolio Section
    ================================================== -->
    <section id="portfolio">
