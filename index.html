@@ -46,9 +46,9 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#CV">CV</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Syllabi & Assignments</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Photography</a></li>
+	         <li><a class="smoothscroll" href="#cv">CV</a></li>
+            <li><a class="smoothscroll" href="#syllabi & assignments">Syllabi & Assignments</a></li>
+            <li><a class="smoothscroll" href="#photography">Photography</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
 
@@ -224,86 +224,15 @@
 
    </section> <!-- CV Section End-->
 
-
-   <section id="portfolio">
-
-            <h1>Photography</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  
-					  
-<script src="http://code.jquery.com/jquery-latest.js"></script> 
-
-<script>
-
-
-$(function(){       
-
-    var id='191421000@N03';
-    var limit ='12';
-
-    // Flickr Photostream feed link.
-    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=" + id + "&lang=en-us&format=json&jsoncallback=?", 
-
-    function(data){$.each(data.items, 
-
-    function(i,item){
-
-        // Number of thumbnails to show.            
-        if(i < limit){
-
-        // Create images and append to div id flickr and wrap link around the image.
-        $("<img/>").attr("src", item.media.m.replace('_m', '_s')).appendTo("#flickr").wrap("<a href='" + item.media.m.replace('_m', '_z') + "' name='"+ item.link + "' title='" +  item.title +"'></a>");
-
-
-        }
-
-    }); 
-
-    }); 
-
-    });
-
-</script>
-<style type="text/css">
-#flickr{
-    width:1000px;
-    overflow:hidden;
-    }
-#flickr a{
-    width:75px;
-    float:left;
-    margin:25px 25px 0 0;
-    padding:0;
-    border:0;   
-    }
-</style>
-
-
-
-<body> 
-<div id="flickr"></div>
-</body> 	
-	                 </div>
-                        
-
-                
-          		</div>  <!-- item end -->
-
-
-	
-   <!-- Portfolio Section
+   <!-- Syllabi & Assignments Section
    ================================================== -->
-   <section id="portfolio">
+   <section id="Syllabi & Assignments">
 
       <div class="row">
 
          <div class="twelve columns collapsed">
 
-            <h1>Photography</h1>
+            <h1>Syllabi & Assignments</h1>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -591,9 +520,79 @@ $(function(){
 
       </div> <!-- row End -->
 
-   </section> <!-- Portfolio Section End-->
+   </section> <!-- Syllabi & Assignments Section End-->
+	
+	<!-- Photography Section
+   ================================================== -->
+   <section id="photography">
+
+            <h1>Photography</h1>
+
+  	<!-- portfolio-wrapper -->
+	    <div class="row item">
+	<div class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  
+					  
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+
+<script>
 
 
+$(function(){       
+
+    var id='191421000@N03';
+    var limit ='12';
+
+    // Flickr Photostream feed link.
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=" + id + "&lang=en-us&format=json&jsoncallback=?", 
+
+    function(data){$.each(data.items, 
+
+    function(i,item){
+
+        // Number of thumbnails to show.            
+        if(i < limit){
+
+        // Create images and append to div id flickr and wrap link around the image.
+        $("<img/>").attr("src", item.media.m.replace('_m', '_s')).appendTo("#flickr").wrap("<a href='" + item.media.m.replace('_m', '_z') + "' name='"+ item.link + "' title='" +  item.title +"'></a>");
+
+
+        }
+
+    }); 
+
+    }); 
+
+    });
+
+</script>
+<style type="text/css">
+#flickr{
+    width:1000px;
+    overflow:hidden;
+    }
+#flickr a{
+    width:75px;
+    float:left;
+    margin:25px 25px 0 0;
+    padding:0;
+    border:0;   
+    }
+</style>
+
+
+
+<body> 
+<div id="flickr"></div>
+</body> 	
+	                 </div>
+                        
+</div>
+                </div>
+          		</section>  <!-- Photography Section End -->
+	   
    <!-- Call-To-Action Section
    ================================================== -->
    <section id="call-to-action">
@@ -624,10 +623,7 @@ $(function(){
 
    </section> <!-- Call-To-Action Section End-->
 
-
-  
-
-
+ 
    <!-- Contact Section
    ================================================== -->
    <section id="contact">
