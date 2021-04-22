@@ -85,10 +85,9 @@
 
    </header> <!-- Header End -->
 
-
    <!-- About Section
    ================================================== -->
-   <section id="about">
+   <section id="about" style="background: #fff;">
 
       <div class="row">
 
@@ -133,10 +132,9 @@
 
    </section> <!-- About Section End-->
 
-
    <!-- CV Section
    ================================================== -->
-   <section id="CV">
+   <section id="CV"  style="background: #fff;">
 
       <!-- Education
       ----------------------------------------------- -->
@@ -226,7 +224,7 @@
 
    <!-- Syllabi & Assignments Section
    ================================================== -->
-   <section id="Syllabi & Assignments">
+   <section id="Syllabi & Assignments" style="background: #fff;">
 
       <div class="row">
 
@@ -524,75 +522,26 @@
 	
 	<!-- Photography Section
    ================================================== -->
-   <section id="photography">
+   <section id="photography" style="font: #fff" >
 
-            <h1>Photography</h1>
+     
 
-  	<!-- portfolio-wrapper -->
-	    <div class="row item">
-	<div class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  
-					  
-<script src="http://code.jquery.com/jquery-latest.js"></script> 
-
-<script>
+	<div class="row item">
+	<h1>Photography</h1>
+    <div class="bgrid-quarters s-bgrid-thirds cf">
 
 
-$(function(){       
-
-    var id='191421000@N03';
-    var limit ='12';
-
-    // Flickr Photostream feed link.
-    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=" + id + "&lang=en-us&format=json&jsoncallback=?", 
-
-    function(data){$.each(data.items, 
-
-    function(i,item){
-
-        // Number of thumbnails to show.            
-        if(i < limit){
-
-        // Create images and append to div id flickr and wrap link around the image.
-        $("<img/>").attr("src", item.media.m.replace('_m', '_s')).appendTo("#flickr").wrap("<a href='" + item.media.m.replace('_m', '_z') + "' name='"+ item.link + "' title='" +  item.title +"'></a>");
-
-
-        }
-
-    }); 
-
-    }); 
-
-    });
-
-</script>
-<style type="text/css">
-#flickr{
-    width:1000px;
-    overflow:hidden;
-    }
-#flickr a{
-    width:75px;
-    float:left;
-    margin:25px 25px 0 0;
-    padding:0;
-    border:0;   
-    }
-</style>
-
-
-
-<body> 
-<div id="flickr"></div>
-</body> 	
-	                 </div>
-                        
+	<a data-flickr-embed="true" href="https://www.flickr.com/photos/191421000@N03" title=""><img src="https://live.staticflickr.com/65535/51130094643_7d6f7787d0_w.jpg" width="400" height="300" alt=""></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+	
+	<a data-flickr-embed="true" href="https://www.flickr.com/photos/191421000@N03/albums/72157719042981265" title="Animals"><img src="https://live.staticflickr.com/65535/51129883581_b82e529835_w.jpg" width="400" height="300" alt="Animals"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+	
+	<a data-flickr-embed="true" href="https://www.flickr.com/photos/191421000@N03/albums/72157719042973435" title="Nature"><img src="https://live.staticflickr.com/65535/51130094643_7d6f7787d0_w.jpg" width="400" height="300" alt="Nature"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				   
 </div>
-                </div>
+       </div>                 
+
           		</section>  <!-- Photography Section End -->
-	   
+	
    <!-- Call-To-Action Section
    ================================================== -->
    <section id="call-to-action">
