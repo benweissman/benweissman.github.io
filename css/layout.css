@@ -188,8 +188,8 @@ ul#nav li.current a { color: #df5d2d;}
 
 #about {
    background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
+   padding-top: 40px;
+   padding-bottom: 0px;
    overflow: hidden;
 }
 
@@ -237,8 +237,8 @@ ul#nav li.current a { color: #df5d2d;}
 
 #resume {
    background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
+   padding-top: 40px;
+   padding-bottom: 40px;
    overflow: hidden;
 }
 
@@ -262,8 +262,8 @@ ul#nav li.current a { color: #df5d2d;}
 #resume .main-col { padding-right: 10%; }
 
 .education, .work {
-   margin-bottom: 48px;
-   padding-bottom: 24px;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
    border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
@@ -639,19 +639,19 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   background: #1F1F1F;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
 
    position: relative;
-   min-height: 200px;
+   min-height: 0px;
    width: 100%;
    overflow: hidden;
 }
 #testimonials .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
+   padding-top: 0px;
+   padding-bottom: 0px;
 }
 #testimonials h1 {
    font: 18px/24px 'opensans-bold', sans-serif;   
@@ -674,7 +674,7 @@ call-to-action .button {
 
 /*	Blockquotes */
 #testimonials blockquote {
-   margin: 0 0px 30px 0px;
+   margin: 0 0px 0px 0px;
    padding-left: 0;
    position: relative;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
